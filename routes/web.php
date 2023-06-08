@@ -92,11 +92,14 @@ Route::group(['middleware' => 'auth:admin'],function(){
         Route::get('delete/{id}', [App\Http\Controllers\Admin\ContactController::class, 'destroy'])->name('contact/delete');
     });
 
+    
+
     //Design
     Route::group(['prefix' => 'Design'],function(){
-        Route::get('delete/{id}', [App\Http\Controllers\Admin\DesignController::class, 'destroy'])->name('d/delete');
-
+        Route::get('Index', [App\Http\Controllers\Admin\DesignController::class, 'index'])->name('design/index');
+        Route::get('delete/{id}', [App\Http\Controllers\Admin\DesignController::class, 'destroy'])->name('design/delete');
     });
+
     Route::get('index', [App\Http\Controllers\Admin\DesignController::class, 'index'])->name('design/index');
 
 
