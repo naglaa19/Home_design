@@ -81,7 +81,6 @@ a{
 .btn:hover
 {
   background-color: var(--ko7ly); 
-  /* padding: 5px; */
 }
 
 .img-fluid
