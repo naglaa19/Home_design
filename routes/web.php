@@ -96,17 +96,15 @@ Route::group(['middleware' => 'auth:admin'],function(){
 
     //Design
     Route::group(['prefix' => 'Design'],function(){
-        Route::get('Index', [App\Http\Controllers\Admin\DesignController::class, 'index'])->name('design/index');
-        Route::get('delete/{id}', [App\Http\Controllers\Admin\DesignController::class, 'destroy'])->name('design/delete');
+        Route::get('Index', [App\Http\Controllers\Admin\DesignAdminController::class, 'index'])->name('design/index');
     });
-
-    Route::get('index', [App\Http\Controllers\Admin\DesignController::class, 'index'])->name('design/index');
+    Route::get('delete/{id}', [App\Http\Controllers\Admin\DesignAdminController::class, 'delete'])->name('delete');
 
 
     //comments
     Route::group(['prefix' => 'Comment'],function(){
         Route::get('Index', [App\Http\Controllers\Admin\CommentController::class, 'index'])->name('comment/index');
-        Route::get('delete/{id}', [App\Http\Controllers\Admin\CommentController::class, 'destroy'])->name('comment/delete');
+        Route::get('delete/{id}', [App\Http\Controllers\Admin\CommentController::class, 'destroy'])->name('destroy');
     });
 });
 
@@ -124,13 +122,7 @@ Route::group(['middleware' => 'auth'],function(){
         Route::get('Edit/{id}', [App\Http\Controllers\User\ProfileController::class, 'edit'])->name('profile/edit');
         Route::post('Update/{id}', [App\Http\Controllers\User\ProfileController::class, 'update'])->name('profile/update');
     });
-
-    // Route::get('profile/create', [App\Http\Controllers\User\ProfileController::class, 'create'])->name('profile/create');
-
     Route::get('create', [App\Http\Controllers\User\ProfileController::class, 'create'])->name('create');
-
-    // Route::get('comment/Create', [App\Http\Controllers\User\CommentController::class, 'create'])->name('comment/create');
-    
 });
 
 

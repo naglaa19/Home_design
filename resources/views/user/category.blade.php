@@ -23,7 +23,6 @@
           
             <div id="main">
               <div class="inner">
-              
                 <section class="tiles">
                   @foreach($category as $cat)
                   <article class="style1">

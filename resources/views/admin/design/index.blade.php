@@ -24,13 +24,13 @@
             </tr>
             </thead>
             <tbody class="table-light">
-            @foreach ($design as $design)
+            @foreach ($designs as $design)
                 <tr>
                     <th scope="row">{{$design->name}}</th>
                     <td><img src="{{ asset('images/designs/'. $design->image) }}" width="60" height="60" alt=""></td>
                     <th scope="row">{{$design->caption}}</th>
                     <td>
-                        <a href="{{route('design/delete',$design->id)}}" onclick="return confirm('Are you sure? \n If you confirm you will remove this design ...')" class="btn btn-danger">Delete</a>
+                        <a href="{{route('delete',$design->id)}}" onclick="return confirm('Are you sure? \n If you confirm you will remove this design ...')" class="btn btn-danger">Delete</a>
                     </td>
                 </tr>
              @endforeach
