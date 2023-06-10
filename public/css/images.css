@@ -1,4 +1,3 @@
-
 :root {
 	--primary: #112233  ;
 	--mint-green : #a2c1b3;
@@ -8,9 +7,17 @@
 	--lighter-blue: #2d5173;
 }
 
-.thumb{
-	z-index: -52 !important;
-} 
+.footer-distributed
+{
+	margin-bottom: -55px;
+}
+.nav-link
+	{
+		font-weight: 200;
+		font-size: larger;
+		z-index: 10000000 !important;
+	}
+
 @-moz-keyframes spinner {
 	0% {
 		-moz-transform: rotate(0deg);
@@ -99,7 +106,6 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
-	/* height: 2000px; */
 }
 
 ol, ul {
@@ -168,7 +174,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: var(--white);
+		background: #242629;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -197,18 +203,13 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #a0a0a1;
-		font-family: 'Lato', sans-serif;
+		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 15pt;
 		font-weight: 300;
 		letter-spacing: 0.025em;
 		line-height: 1.65;
 	}
 
-	.nav-link
-	{
-		font-weight: 200;
-		font-size: larger;
-	}
 		@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
@@ -223,12 +224,12 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		/* border-bottom: dotted 1px; */
-		color: #34a58e;
+		/* color: #34a58e; */
 		text-decoration: none;
 	}
 
 		a:hover {
-			border-bottom-color: transparent;
+			/* border-bottom-color: transparent; */
 			/* color: #34a58e !important; */
 		}
 
@@ -1247,7 +1248,7 @@ input, select, textarea {
 			-webkit-transition: opacity 0.2s ease-in-out;
 			-ms-transition: opacity 0.2s ease-in-out;
 			transition: opacity 0.2s ease-in-out;
-			background-image: url("images/arrow.svg");
+			background-image: url("asset('images/icons/arrow.svg')");
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: 5em;
@@ -1563,6 +1564,7 @@ input, select, textarea {
 			opacity: 1;
 			overflow: hidden;
 			position: relative;
+			/* z-index: -1; */
 		}
 	
 			#main .thumb:after {
@@ -1592,7 +1594,6 @@ input, select, textarea {
 				position: absolute;
 				top: 0;
 				width: 100%;
-				/* bottom: 500px; */
 			}
 
 			#main .thumb > h2 {

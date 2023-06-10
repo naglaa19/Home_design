@@ -39,11 +39,11 @@
             </div>
   
       <!-- Scripts -->
-      <script src="{{asset('js2/jquery.min.js')}}"></script>
-      <script src="{{asset('js2/browser.min.js')}}"></script>
-      <script src="{{asset('js2/breakpoints.min.js')}}"></script>
-      <script src="{{asset('js2/util.js')}}"></script>
-      <script src="{{asset('js2/main.js')}}"></script>
+      <script src="{{asset('images_js/jquery.min.js')}}"></script>
+      <script src="{{asset('images_js/browser.min.js')}}"></script>
+      <script src="{{asset('images_js/breakpoints.min.js')}}"></script>
+      <script src="{{asset('images_js/util.js')}}"></script>
+      <script src="{{asset('images_js/main.js')}}"></script>
   
     </body>
 </html>
