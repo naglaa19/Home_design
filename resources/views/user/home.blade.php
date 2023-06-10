@@ -479,84 +479,84 @@
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item rounded">
-                        <img class="img-fluid" src="img/" alt="">
+                        <img class="img-fluid" style="height: 550px; width:500px" src="{{asset('images/team/zakarya.jpg')}}" alt="">
                         <div class="team-text">
-                            <h4 class="mb-0">Doris Jordan</h4>
+                            <h4 class="mb-0">Mohamed Zakarya</h4>
                             <p class="text-primary">Landscape Designer</p>
                             <div class="team-social d-flex">
-                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square rounded-circle me-2" href="https://www.facebook.com/profile.php?id=100009318368195"><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square rounded-circle me-2" href="https://www.instagram.com/bota20_11/"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item rounded">
-                        <img class="img-fluid" src="img/" alt="">
+                        <img class="img-fluid" style="height: 550px; width:500px" src="{{asset('images/team/ayman.jpeg')}}" alt="">
                         <div class="team-text">
-                            <h4 class="mb-0">Johnny Ramirez</h4>
-                            <p class="text-primary">Garden Designer</p>
+                            <h4 class="mb-0">Mohamed Ayman</h4>
+                            <p class="text-primary">Graphic designer / unity developer</p>
                             <div class="team-social d-flex">
-                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square rounded-circle me-2" href="https://www.facebook.com/mohamed.ayman.ezzat24"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square rounded-circle me-2" href="https://www.behance.net/mohamedayman244"><i class="fab fa-behance"></i></a>
+                                <a class="btn btn-square rounded-circle me-2" href="https://www.instagram.com/mata24_4/"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item rounded">
-                        <img class="img-fluid" src="img/" alt="">
+                        <img class="img-fluid" style="height: 550px; width:500px" src="{{asset('images/team/naglaa.jpg')}}" alt="">
                         <div class="team-text">
-                            <h4 class="mb-0">Diana Wagner</h4>
-                            <p class="text-primary">Senior Gardener</p>
+                            <h4 class="mb-0">Naglaa Assem</h4>
+                            <p class="text-primary" >Back-end developer</p>
                             <div class="team-social d-flex">
-                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square rounded-circle me-2" href="https://www.facebook.com/profile.php?id=100010290128884&mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square rounded-circle me-2" href="https://www.behance.net/naglaaassem"><i class="fab fa-behance"></i></a>
+                                <a class="btn btn-square rounded-circle me-2" href="https://www.instagram.com/naglaa.assem/"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item rounded">
-                        <img class="img-fluid" src="img/" alt="">
+                        <img class="img-fluid" style="height: 550px; width:500px" src="{{asset('images/team/maryam.jpg')}}" alt="">
                         <div class="team-text">
-                            <h4 class="mb-0">Diana Wagner</h4>
-                            <p class="text-primary">Senior Gardener</p>
+                            <h4 class="mb-0">Mariam Ahmed</h4>
+                            <p class="text-primary">ui/ux / front-end developer</p>
                             <div class="team-social d-flex">
                                 <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square rounded-circle me-2" href="https://www.instagram.com/maryamahmed4184/"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item rounded">
-                        <img class="img-fluid" src="img/" alt="">
+                        <img class="img-fluid" style="height: 550px; width:500px" src="{{asset('images/team/batta.jpg')}}" alt="">
                         <div class="team-text">
-                            <h4 class="mb-0">Diana Wagner</h4>
-                            <p class="text-primary">Senior Gardener</p>
+                            <h4 class="mb-0">Fatma Ahmed</h4>
+                            <p class="text-primary">Front-end developer</p>
                             <div class="team-social d-flex">
-                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square rounded-circle me-2" href="https://www.facebook.com/profile.php?id=100009177019410"><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square rounded-circle me-2" href="https://www.instagram.com/fatmaa.ahmeed/"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item rounded">
-                        <img class="img-fluid" src="img/" alt="">
+                        <img class="img-fluid" style="height: 550px; width:500px" src="{{asset('images/team/fatma.jpg')}}" alt="">
                         <div class="team-text">
-                            <h4 class="mb-0">Diana Wagner</h4>
-                            <p class="text-primary">Senior Gardener</p>
+                            <h4 class="mb-0">Fatma Ahmed</h4>
+                            <p class="text-primary">Front-end developer</p>
                             <div class="team-social d-flex">
-                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square rounded-circle me-2" href="https://www.facebook.com/profile.php?id=100013121797490"><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square rounded-circle me-2" href="https://www.instagram.com/fatma.ahmed3399/"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>

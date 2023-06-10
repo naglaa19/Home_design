@@ -10,7 +10,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Application</title>
   
-  <!-- PLUGINS CSS STYLE -->
   <!-- Bootstrap -->
   <link href="{{asset('css/app/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
   <!-- themify icon -->
@@ -21,6 +20,7 @@
   <link href="{{asset('css/app/slick-theme.css')}}" rel="stylesheet" type="text/css">
   
   <!-- CUSTOM CSS -->
+  <link rel="stylesheet" type="text/css" href="{{asset('css/app/lightbox.css')}}">
   <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
   <!-- FAVICON -->
   <link href="images/favicon.png" rel="shortcut icon">
@@ -213,28 +213,23 @@
 <!--=============================================
 =                Images gallary                 =
 ==============================================-->
-<section class="Gallary_sec">
-	<div class="container">
-		<div class="row">
-		  <h1 style="margin-bottom: 50px;">2D Images to Scan-to-3D</h1>
-	      <div class="gallery" id="gallery">
+
+		
+		<div class="contanier-images">
+			<h2 class="contain-header">2D Images to Scan-to-3D</h2>
 			@foreach($design as $design)
-			<div class="gallery-item">
-				
-				<div class="content" >
-					
-					<img src="{{asset('images/scan/'.$design->image)}}" alt="">
-						
+			
+				<div class="gallery-group">
+					<a href="{{asset('images/scan/'.$design->image)}}" data-lightbox="models">
+						<div class="card">
+							<img  class='photo' src="{{asset('images/scan/'.$design->image)}}">
+						</div>
+					</a>
+			
 				</div>
-				
-			</div>
 			@endforeach
 		</div>
-	 </div>
-	</div>
-</section>
-
-<!--====  End of Images  ====-->
+		
 
 <!--=============================================
 =            Call to Action Download            =
@@ -272,6 +267,7 @@
   <script src="{{asset('app_js/slick.min.js')}}"></script>
   <script src="{{asset('app_js/custom.js')}}"></script>
   
+  <script src="{{asset('app_js/lightbox-plus-jquery.js')}}"></script>
 </body>
 
 </html>

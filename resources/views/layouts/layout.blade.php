@@ -3,22 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-
-    <!-- Fonts -->
-    {{-- <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> --}}
-    {{-- <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&family=Public+Sans:wght@300;400&family=Space+Mono:wght@700&display=swap');
-    </style> --}}
-    {{-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&family=Lora:ital@1&family=Public+Sans:wght@300;400&family=Space+Mono:wght@700&display=swap" rel="stylesheet"> --}}
     {{-- bootstrap --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
@@ -26,7 +14,6 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/menu.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/footer.css')}}">
     <link rel="stylesheet" href="{{asset('css/navbar.css')}}">
-    {{-- <link rel="stylesheet" type="text/css" href="css/admin.css"> --}}
     <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image/x-icon" href="{{ asset('images/logo/LogoM.png')}}">
@@ -50,14 +37,7 @@
                         <li><a href="{{route('/main')}}">Home</a></li>
                         <li>
                           <a href="{{route('category')}}">Blogs</a>
-                          {{-- <ul class="submenu">
-                              @foreach (App\Http\Controllers\GlobalVariableController::global() as $category)
-                                  <li><a href="{{route('/images', $category->id)}}">{{$category->name}}</a></li>
-                              @endforeach
-                          </ul>          --}}
-                        </li>
                         <li><a href="{{route('/FAQ')}}">Ask me</a></li>
-                        {{-- <li><a href="#contact">Contact Us</a></li> --}}
                         <li><a href="{{route('designs')}}">Designs</a></li>
                         <li><a href="{{route('app')}}">App</a></li>
                         @if (Auth::user())
@@ -102,12 +82,7 @@
         </nav>
     </div>
    
-
-    {{-- <nav class="navSpace">	 --}}
-        {{-- <a class="logo" href="#"><img src="home.png" width="70px" height="50px"></a> --}}
-        
-    {{-- </nav> --}}
-       
+  
         <main >
             @yield('content')
         </main>

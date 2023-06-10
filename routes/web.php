@@ -92,14 +92,11 @@ Route::group(['middleware' => 'auth:admin'],function(){
         Route::get('delete/{id}', [App\Http\Controllers\Admin\ContactController::class, 'destroy'])->name('contact/delete');
     });
 
-    
-
     //Design
     Route::group(['prefix' => 'Design'],function(){
         Route::get('Index', [App\Http\Controllers\Admin\DesignAdminController::class, 'index'])->name('design/index');
     });
     Route::get('delete/{id}', [App\Http\Controllers\Admin\DesignAdminController::class, 'delete'])->name('delete');
-
 
     //comments
     Route::group(['prefix' => 'Comment'],function(){
@@ -107,6 +104,14 @@ Route::group(['middleware' => 'auth:admin'],function(){
         Route::get('delete/{id}', [App\Http\Controllers\Admin\CommentController::class, 'destroy'])->name('destroy');
     });
 });
+
+
+
+
+
+
+
+
 
 
 // user routes

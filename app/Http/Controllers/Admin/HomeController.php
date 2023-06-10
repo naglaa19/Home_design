@@ -29,10 +29,12 @@ class HomeController extends Controller
      */
     public function index()
     {
+        // return '44';
         $users = User::select()->get()->count(); 
         $designs = Design::select()->get()->count();
         $Messages = Contact::select()->get()->count();
         $comments = Comment::select()->get()->count();
+        // return '44';
         return view('admin.home',compact('users','designs','Messages','comments'));
     }
 }

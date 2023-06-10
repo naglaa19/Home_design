@@ -9,7 +9,7 @@ class AppController extends Controller
 {
     public function index()
     {
-        $design = scanDesign::select()->paginate(PAGINATION_COUNTER);
+        $design = scanDesign::select()->get();
         return view('user.application', compact('design'));
     }
 }
